@@ -1,8 +1,18 @@
-const shopping = ["Ribeye", "Orange", "Milk", "Water", "Kiwi", "Bread"];
+function square(size) {
+  const char = "*";
+  for (let i = 0; i <= size; i += 1) {
+    let output = "";
+
+    if (i == 0 || i == size) {
+      console.log(char.repeat(9));
+    } else {
+     console.log('*\t*') ;
+    }
+    console.log(output);
+  }
+}
 
 async function main() {
-  console.log("Here is your shopping list");
-  console.log("===========================");
-  shopping.forEach((element) => console.log(element));
+  square(9);
 }
 main();
